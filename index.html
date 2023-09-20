@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 3000px;
+        }
+
+        button{
+            background-color: red;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            cursor: pointer;
+            display: none;
+        }
+
+
+
+
+
+
+
+
+
+
+         ul{
+            list-style: none;
+            width: 20%;
+            margin: auto;
+            background-color: #aaa;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        li{
+            width: 50px;
+            height: 50px;  
+            border-radius: 10px;
+            cursor: pointer;
+            opacity: .5;
+            transition: .2s;
+        }
+        li:hover{opacity: 1;}
+        li:first-child{background-color: red;}
+        li:nth-child(2){background-color: green;}
+        li:nth-child(3){background-color: blue;}
+        li:last-child{background-color: black;}
+        li.active{opacity: 1;}
+        .res{
+            width: 35%;
+            margin: auto;
+            height: 250px;
+            background-color: #bbb;
+            margin-top: 20px;
+        } 
+
+
+
+
+
+
+
+
+        .form, .res{
+            padding: 20px;
+            background-color: rgb(222, 222, 222);
+            margin: 30px auto;
+            width: 50%;
+            border-radius: 10px;
+        }
+        .form{
+            display: flex;
+            justify-content: space-between;
+        }
+        .form input{
+            width: 80%;
+            border-radius: 10px;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+        }
+        .form button{
+            background-color: rgb(187, 121, 0);
+            color: #fff;
+            padding: 10px 0;
+            outline: none;
+            border: 1px solid #FFF;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 12%;
+        } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+        <input type="text" name="texts" class="input" placeholder="Elements Text" />
+        <select name="type" class="input">
+            <option value="Div">Div</option>
+            <option value="Section">Section</option>
+        </select>
+        <input type="submit" name="create" value="Create" />
+        <div class="results"></div>
+    </form>
+
+
+
+
+
+    <div id="counter">6</div>
+
+
+
+
+
+
+    <button>Up</button>
+
+
+
+
+
+
+
+
+
+    <ul>
+        <li data-color="red"></li>
+        <li data-color="green"></li>
+        <li data-color="blue"></li>
+        <li data-color="black"></li>
+    </ul>
+<div class="res"></div>
+
+
+
+
+
+
+
+
+
+
+<div class="form">
+    <input id="input-val" type="text">
+    <button id="add-item">add item</button>
+</div>
+
+<div class="res"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
